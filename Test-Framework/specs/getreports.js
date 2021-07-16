@@ -9,18 +9,20 @@ const {via_location} = require("../apiModules/qantasApp/via_location");
 describe('Get Reports', function() {
 this.timeout(30000);
     describe('Current Weather via Location', function() {
-			it('Details for city Hobson', async function() {
+			it('Details for city Heathsville', async function() {
 				// reqData = envData.BaseURL1+envData.endPoints.location; //.replace(('lat',19),('lon',76));
-				reqData = envData.BaseURL+envData.endPoints.version+"?"+"lat="+location.Hobson.lat+"&"+"lon="+location.Hobson.lon+"&"+"key="+envData.endPoints.key;
+				reqData = envData.BaseURL+envData.endPoints.version+"?"+"lat="+location.Heathsville.lat+"&"+"lon="+location.Heathsville.lon+"&"+"key="+envData.endPoints.key;
 				currentResponse = await via_location(reqData);
 				expect(currentResponse.status).to.equal(200);          
 				currentResponseBody = JSON.parse(JSON.stringify(currentResponse.data));    
-				expect(currentResponseBody).to.be.an('object');    
+				expect(currentResponseBody).to.be.an('object');
+				report(this, 'City Name', currentResponseBody.data[0].city_name); 
+				expect(currentResponseBody.data[0].city_name).to.equal(location.Heathsville.city_name);
 				report(this, 'Actual Response Data', currentResponseBody);          
 			});
 			it('Details for city Noma', async function() {
 				// reqData = envData.BaseURL1+envData.endPoints.location; //.replace(('lat',19),('lon',76));
-				reqData = envData.BaseURL+envData.endPoints.version+"?"+"lat="+location.Hobson.lat+"&"+"lon="+location.Hobson.lon+"&"+"key="+envData.endPoints.key;
+				reqData = envData.BaseURL+envData.endPoints.version+"?"+"lat="+location.Heathsville.lat+"&"+"lon="+location.Heathsville.lon+"&"+"key="+envData.endPoints.key;
 				currentResponse = await via_location(reqData);
 				expect(currentResponse.status).to.equal(200);          
 				currentResponseBody = JSON.parse(JSON.stringify(currentResponse.data));    
@@ -29,7 +31,7 @@ this.timeout(30000);
 			});
 			it('Request with Invalid Key', async function() {
 				// reqData = envData.BaseURL1+envData.endPoints.location; //.replace(('lat',19),('lon',76));
-				reqData = envData.BaseURL+envData.endPoints.version+"?"+"lat="+location.Hobson.lat+"&"+"lon="+location.Hobson.lon+"&"+"key=1c6429030ff94588948e063787f7ed66";
+				reqData = envData.BaseURL+envData.endPoints.version+"?"+"lat="+location.Heathsville.lat+"&"+"lon="+location.Heathsville.lon+"&"+"key=1c6429030ff94588948e063787f7ed66";
 				currentResponse = await via_location(reqData);
 				expect(currentResponse.status).to.equal(403);          
 				currentResponseBody = JSON.parse(JSON.stringify(currentResponse.data));    
@@ -38,7 +40,7 @@ this.timeout(30000);
 		});
     });
 
-		describe('Current Weather via postcode', function() {
+	describe('Current Weather via postcode', function() {
 			it('Postcode for New Delhi', async function() {
 					// reqData = envData.BaseURL1+envData.endPoints.postcode;
 					reqData = envData.BaseURL+envData.endPoints.version+"?"+"postal_code="+location.NewDelhi.postcode+"&"+"key="+envData.endPoints.key;
@@ -57,7 +59,7 @@ this.timeout(30000);
 				expect(currentResponseBody).to.be.an('object');    
 				report(this, 'Actual Response Data', currentResponseBody);
 			});
-			it.only('Invalid PostCode', async function() {
+			it('Invalid PostCode', async function() {
 				// reqData = envData.BaseURL1+envData.endPoints.postcode;
 				reqData = envData.BaseURL+envData.endPoints.version+"?"+"postal_code="+"&"+"key="+envData.endPoints.key;
 				currentResponse = await via_postcode(reqData);
