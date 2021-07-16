@@ -4,7 +4,8 @@
       "lat": "38",
       "city_name": "Heathsville",
       "country_code": "US",
-      "postcode": "23436"
+      "postcode": "23436",
+      "errorMsg": "API key not valid, or not yet activated."
       },
     "Noma": {
       "lon": "-85.6185",
