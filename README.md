@@ -1,7 +1,7 @@
 ## REST API JavaScript Test Automation Framework 
 
 ## Overview
-* This is simple project to showcase Api Test Automation Framework in JavaScript using mocha. It uses local mock server to fetch responses.
+* This is simple project to showcase Api Test Automation Framework in JavaScript using mocha.
 * **Skills:** Api Test Automation, Modular Design
 * **Languages:** JavaScript/ Node.JS
 * **SCM:** Git
@@ -10,8 +10,7 @@
 * **Assertion Lib:** Chai, Expect, Should
 
 ## Setup
-* Download [javascript-api-mocha](https://github.com/happyali/techTask.git
-) Project from GitHub
+* Download [javascript-api-mocha](https://github.com/happyali/techTask.git) Project from GitHub
 * Install latest [Node.JS](https://nodejs.org/en/download/)
 * Install latest [Visual Studio Code](https://code.visualstudio.com/download)
 

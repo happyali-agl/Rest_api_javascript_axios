@@ -1,7 +1,10 @@
 {
-  "BaseURL" : "https://api.weatherbit.io/v2.0/current",
+  "BaseURL1" : "https://api.weatherbit.io/v2.0/current",
+  "BaseURL" : "https://api.weatherbit.io/",
   
   "endPoints":{
+    "version": "v2.0/current",
+    "key":"1c64290306f94588948e063787f7ed66",
     "location": "?lat=38&lon=76&key=1c64290306f94588948e063787f7ed66",
     "postcode": "?postal_code=23345&key=1c64290306f94588948e063787f7ed66"
   }

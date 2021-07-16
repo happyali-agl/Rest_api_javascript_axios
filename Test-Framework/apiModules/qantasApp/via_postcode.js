@@ -1,11 +1,11 @@
 const {Request} = require ('../../common/baseRequest.js');
 
-const via_postcode = testData =>
+const via_postcode = reqData =>
     new Promise( (resolve, reject) => {
 
         var options = {
             method: 'get',
-            url: testData,
+            url: reqData,
             resolveWithFullResponse: true           
         };
 
