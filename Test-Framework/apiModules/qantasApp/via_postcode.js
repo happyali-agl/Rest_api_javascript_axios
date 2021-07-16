@@ -15,7 +15,7 @@ const via_postcode = reqData =>
         })
         .catch(function (err) {
             reject(err);
-            console.log("Error Inside Get_healthCheck module: "+err);
+            console.log("Error in via_postcode for Weather: "+err);
         });
     });
 

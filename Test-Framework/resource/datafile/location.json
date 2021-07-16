@@ -1,16 +1,30 @@
  {
-  "validLocation": {
-    "lat": "38",
-    "lon": "-76.5142",
-    "city_name": "Lake Monticello",
-    "country_code": "US",
-    "postcode": "23436"
+    "Hobson": {
+      "lon": "-76.5142",
+      "lat": "38",
+      "city_name": "Hobson",
+      "country_code": "US",
+      "postcode": "23436"
+      },
+    "Noma": {
+      "lon": "-85.6185",
+      "lat": "30.9821",
+      "city_name": "Hobson",
+      "country_code": "US",
+      "postcode": "32451"
+      },
+    "NewDelhi": {
+      "lon": "77.2183",
+      "lat": "28.6369",
+      "city_name": "New Delhi",
+      "country_code": "IN",
+      "postcode": "32552"
     },
-  "test2": {
-    "lat": "30.385",
-    "lon": "-86.3473",
-    "city_name": "Miramar Beach",
-    "country_code": "US",
-    "postcode": "32552"
-  }
+    "Zamora": {
+      "lon": "-5.7446",
+      "lat": "41.5063",
+      "city_name": "Zamora",
+      "country_code": "ES",
+      "postcode": "42849001"
+    }
 }
