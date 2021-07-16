@@ -1,0 +1,16 @@
+ {
+    "test1": {
+        "lat": "38",
+        "lon": "-76.5142",
+        "city_name": "Lake Monticello",
+        "country_code": "US",
+        "postcode": "23436"
+    },
+    "test2": {
+      "lat": "30.385",
+      "lon": "-86.3473",
+      "city_name": "Miramar Beach",
+      "country_code": "US",
+      "postcode": "32552"
+  }
+}
