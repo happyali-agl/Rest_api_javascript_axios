@@ -7,7 +7,7 @@ jobs:
     docker:
       - image: cimg/node:lts
   
-    working_directory: ~/repo/Test-Framework
+    working_directory: ~/Test-Framework
     
     steps:
       - checkout
