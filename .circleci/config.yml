@@ -10,21 +10,7 @@ jobs:
     working_directory: ~/Rest_api_javascript_axios
 
     steps:
-      - checkout
-          
-      # Download and cache dependencies
-      - restore_cache:
-          keys:
-          - v1-dependencies-{{ checksum "package.json" }}
-          # fallback to using the latest cache if no exact match is found
-          - v1-dependencies-
-
+      - checkout:
+          path: ~/Rest_api_javascript_axios/Test-Framework
       - run: npm install
-
-      - save_cache:
-          paths:
-            - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
-
-      # run tests!
       - run: npm test
