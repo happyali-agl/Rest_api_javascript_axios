@@ -7,10 +7,10 @@ jobs:
     docker:
       - image: cimg/node:lts
   
-    working_directory: ~/repo
+    working_directory: ~/Rest_api_javascript_axios
 
     steps:
       - checkout:
-          path: ~/repo/Test-Framework
+          path: ~/Rest_api_javascript_axios/Test-Framework
       - run: npm install
       - run: npm test
