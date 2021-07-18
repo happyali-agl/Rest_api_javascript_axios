@@ -7,9 +7,10 @@ jobs:
     docker:
       - image: cimg/node:lts
   
-    working_directory: ~/Test-Framework
-    
+    working_directory: ~/repo
+
     steps:
-      - checkout
+      - checkout:
+          path: ~/repo/Test-Framework
       - run: npm install
       - run: npm test
