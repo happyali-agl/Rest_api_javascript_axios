@@ -19,6 +19,9 @@
 * Run `$ npm install`
 * Run Tests `$ npm test`
 
+## Bug Reports
+* Issues identified while scripting or run are reported in "./BugsReport" folder in project
+
 ## Sample API Test Scenarios
     
     1. Call End point to get Weather details with respect to LOCATION (Lat, Log) 
