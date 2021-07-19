@@ -1,4 +1,5 @@
-## REST API JavaScript Test Automation Framework 
+## REST API JavaScript Test Automation Framework
+======================================================================
 
 ## Overview
 * This is simple project to showcase Api Test Automation Framework in JavaScript using mocha.
@@ -26,4 +27,11 @@
     
     1. Call End point to get Weather details with respect to LOCATION (Lat, Log) 
     2. Call End point to get Weather details with respect to POSTCODE
+ 
+## Pipeline for CI is implemented using CircleCI
+======================================================================
+	
+	* You can find the current running pipeline at https://app.circleci.com/pipelines/github/happyali-agl/Rest_api_javascript_axios
+	* Currently it is throwing error as:
+		" Error: Cannot find module '../resource/datafile/endPoints.json'"
    
