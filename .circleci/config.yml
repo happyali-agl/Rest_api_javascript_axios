@@ -6,9 +6,7 @@ jobs:
   build:
     docker:
       - image: cimg/node:lts
-  
-    working_directory: ~/Rest_api_javascript_axios/Test-Framework
-
+      
     steps:
       - checkout:
           path: ~/Rest_api_javascript_axios
