@@ -12,5 +12,5 @@ jobs:
     steps:
       - checkout:
           path: ~/Rest_api_javascript_axios/Test-Framework
-      - run: npm install
+      - run: npm install -g
       - run: npm test
