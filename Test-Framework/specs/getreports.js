@@ -1,7 +1,7 @@
 const expect = require("chai").expect;
 const { report } = require('../support');
-const envData = require('../resource/datafile/endPoints.json');
-const location = require('../resource/datafile/location.json');
+const envData = require('../resource/endPoints.json');
+const location = require('../resource/location.json');
 const {via_postcode} = require("../apiModules/qantasApp/via_postcode");
 const {via_location} = require("../apiModules/qantasApp/via_location");
 
